@@ -8,9 +8,9 @@
     <artifactId>pism-exception</artifactId>
     <version>1.0.0</version>
 
-    <name>ezasse</name>
-    <description>Easy automatic SQL script executor</description>
-    <url>https://github.com/PerccyKing/ezasse</url>
+    <name>pism-execption</name>
+    <description>pism exception package</description>
+    <url>https://github.com/pism-oss/pism-exception</url>
 
     <scm>
         <url>https://github.com/pism-oss/pism-exception.git</url>
