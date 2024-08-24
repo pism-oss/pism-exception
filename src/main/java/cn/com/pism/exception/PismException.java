@@ -38,4 +38,9 @@ public class PismException extends RuntimeException {
         this.errorCode = SYSTEM_ERROR;
     }
 
+    public PismException(Throwable cause) {
+        super(cause);
+        this.errorCode = SYSTEM_ERROR;
+    }
+
 }
