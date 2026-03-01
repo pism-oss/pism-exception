@@ -4,17 +4,17 @@ package cn.com.pism.exception;
  * @author perccyking
  * @since 24-06-28 19:25
  */
-public interface ErrorCode {
+public interface ErrorCode<C> {
     /**
      * <p>
      * 获取错误代码
      * </p>
      * by perccyking
      *
-     * @return {@link Integer} 错误代码
+     * @return {@link C} 错误代码
      * @since 24-08-23 17:00
      */
-    Integer getCode();
+    C getCode();
 
     /**
      * <p>

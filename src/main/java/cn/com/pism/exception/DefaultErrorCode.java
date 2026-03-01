@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 @AllArgsConstructor
 @Getter
-public enum DefaultErrorCode implements ErrorCode {
+public enum DefaultErrorCode implements ErrorCode<Integer> {
 
     SYSTEM_ERROR(0, "系统错误");
 
