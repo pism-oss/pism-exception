@@ -11,7 +11,7 @@ import static cn.com.pism.exception.DefaultErrorCode.SYSTEM_ERROR;
 @Getter
 public class PismException extends RuntimeException {
 
-    private final ErrorCode errorCode;
+    private final ErrorCode<?> errorCode;
 
     public PismException() {
         super();
@@ -23,12 +23,12 @@ public class PismException extends RuntimeException {
         this.errorCode = SYSTEM_ERROR;
     }
 
-    public PismException(ErrorCode errorCode) {
+    public PismException(ErrorCode<?> errorCode) {
         super(errorCode.getMsg());
         this.errorCode = errorCode;
     }
 
-    public PismException(String message, ErrorCode errorCode) {
+    public PismException(String message, ErrorCode<?> errorCode) {
         super(message != null && !message.isEmpty() ? message : errorCode.getMsg());
         this.errorCode = errorCode;
     }
@@ -43,7 +43,7 @@ public class PismException extends RuntimeException {
         this.errorCode = SYSTEM_ERROR;
     }
 
-    public PismException(Throwable cause, ErrorCode errorCode) {
+    public PismException(Throwable cause, ErrorCode<?> errorCode) {
         super(cause);
         this.errorCode = errorCode;
     }
